@@ -13,7 +13,18 @@
         $form_container.children("div").steps({
             headerTag: "h3",
             bodyTag: "section",
-            transitionEffect: "slideLeft"
+            transitionEffect: "slideLeft",
+            onFinishing: function (event, currentIndex) { 
+                //NOTE: Here you can do form validation and return true or false based on your validation logic
+                console.log("Form has been validated!");
+                return true; 
+            }, 
+            onFinished: function (event, currentIndex) {
+               //NOTE: Submit the form, if all validation passed.
+                console.log("Form can be submitted using submit method. E.g. $('#basic-form').submit()"); 
+                $("#basic-form").submit();
+
+            }
         });
         return $form_container;
     },

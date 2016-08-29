@@ -12,7 +12,7 @@ $(function(){
     //modify buttons style
     $.fn.editableform.buttons = 
     '<button type="submit" class="btn btn-primary editable-submit btn-sm waves-effect waves-light"><i class="md md-done"></i></button>' +
-    '<button type="button" class="btn editable-cancel btn-sm waves-effect waves-light"><i class="md md-clear"></i></button>';         
+    '<button type="button" class="btn btn-white editable-cancel btn-sm waves-effect"><i class="md md-clear"></i></button>';
     
     //editables 
     $('#username').editable({
@@ -95,7 +95,10 @@ $(function(){
      }
    });
     
-    $('#inline-status').editable({mode: 'inline'});
+    $('#inline-status').editable({
+        mode: 'inline',
+        inputclass: 'string'
+    });
     
     $('#inline-group').editable({
       showbuttons: false,

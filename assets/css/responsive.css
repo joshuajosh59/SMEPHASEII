@@ -4,6 +4,12 @@ Author: CoderThemes
 Email: coderthemes@gmail.com
 File: Responsive
 */
+@media only screen and (max-width: 6000px) and (min-width: 700px) {
+  .wrapper.right-bar-enabled .right-bar {
+    right: 0;
+    z-index: 99;
+  }
+}
 @media (min-width: 768px) and (max-width: 1024px) {
   .email-msg {
     display: none;
@@ -17,6 +23,15 @@ File: Responsive
 @media (max-width: 767px) {
   body {
     overflow-x: hidden;
+  }
+  .enlarged .left.side-menu {
+    margin-left: -75px;
+  }
+  .content-page {
+    margin-left: 0px !important;
+  }
+  .footer {
+    left: 0px !important;
   }
   .mobile-sidebar {
     left: 0px;
@@ -75,11 +90,14 @@ File: Responsive
     width: 100%;
     text-align: left;
   }
-  .ms-container {
-    width: 100%;
+  .product-search {
+    margin-bottom: 30px;
   }
-  .email-msg {
-    display: none;
+  .top-menu-item-xs {
+    display: inline-flex !important;
+  }
+  .dropdown-menu-lg {
+    width: 240px !important;
   }
 }
 @media (max-width: 480px) {
@@ -91,6 +109,9 @@ File: Responsive
   }
   .search-bar {
     display: none !important;
+  }
+  .ms-container {
+    width: 100%;
   }
 }
 @media (max-width: 420px) {
@@ -118,6 +139,13 @@ File: Responsive
   .topbar-left {
     width: 70px !important;
   }
+  .logo .icon-c-logo {
+    display: inline-block !important;
+    line-height: 58px !important;
+  }
+  .logo span {
+    display: none !important;
+  }
   .content-page {
     margin-left: 70px;
   }
@@ -126,5 +154,9 @@ File: Responsive
   }
   .enlarged .side-menu.left {
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1) !important;
+  }
+  .conversation-list .conversation-text,
+  .conversation-list .odd .conversation-text {
+    width: 100% !important;
   }
 }

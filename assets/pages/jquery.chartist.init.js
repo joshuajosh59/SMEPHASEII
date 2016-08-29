@@ -16,7 +16,10 @@
     [3,  4, 5, 6, 7, 6, 4, 5, 6, 7, 6, 3]
   ]
 }, {
-  low: 0
+  low: 0,
+  plugins: [
+    Chartist.plugins.tooltip()
+  ]
 });
 
 // Let's put a sequence number aside so we can use it in the event callbacks
@@ -148,7 +151,10 @@ new Chartist.Line('#simple-line-chart', {
   fullWidth: true,
   chartPadding: {
     right: 40
-  }
+  },
+  plugins: [
+    Chartist.plugins.tooltip()
+  ]
 });
 
 
@@ -198,6 +204,8 @@ new Chartist.Line('#scatter-diagram', data, options, responsiveOptions);
 
 //Line chart with tooltips
 
+//Line chart with tooltips
+
 new Chartist.Line('#line-chart-tooltips', {
   labels: ['1', '2', '3', '4', '5', '6'],
   series: [
@@ -210,7 +218,13 @@ new Chartist.Line('#line-chart-tooltips', {
       data: [1, 1.618, 2.618, 4.236, 6.854, 11.09]
     }
   ]
-});
+},
+    {
+  plugins: [
+    Chartist.plugins.tooltip()
+  ]
+}
+);
 
 var $chart = $('#line-chart-tooltips');
 
@@ -249,7 +263,10 @@ new Chartist.Line('#chart-with-area', {
   ]
 }, {
   low: 0,
-  showArea: true
+  showArea: true,
+  plugins: [
+    Chartist.plugins.tooltip()
+  ]
 });
 
 
@@ -273,7 +290,10 @@ new Chartist.Line('#bi-polar-line', {
   axisX: {
     showLabel: false,
     showGrid: false
-  }
+  },
+  plugins: [
+    Chartist.plugins.tooltip()
+  ]
 });
 
 
@@ -332,7 +352,10 @@ var chart = new Chartist.Line('#line-smoothing', {
   chartPadding: {
     right: 20
   },
-  low: 0
+  low: 0,
+  plugins: [
+    Chartist.plugins.tooltip()
+  ]
 });
 
 
@@ -355,7 +378,10 @@ var options = {
     labelInterpolationFnc: function(value, index) {
       return index % 2 === 0 ? value : null;
     }
-  }
+  },
+  plugins: [
+    Chartist.plugins.tooltip()
+  ]
 };
 
 new Chartist.Bar('#bi-polar-bar', data, options);
@@ -414,7 +440,10 @@ new Chartist.Bar('#multi-line-chart', {
       return value + ' CHF'
     },
     scaleMinSpace: 15
-  }
+  },
+  plugins: [
+    Chartist.plugins.tooltip()
+  ]
 });
 
 
@@ -435,7 +464,10 @@ new Chartist.Bar('#stacked-bar-chart', {
     labelInterpolationFnc: function(value) {
       return (value / 1000) + 'k';
     }
-  }
+  },
+  plugins: [
+    Chartist.plugins.tooltip()
+  ]
 }).on('draw', function(data) {
   if(data.type === 'bar') {
     data.element.attr({
@@ -463,7 +495,10 @@ new Chartist.Bar('#horizontal-bar-chart', {
   horizontalBars: true,
   axisY: {
     offset: 70
-  }
+  },
+  plugins: [
+    Chartist.plugins.tooltip()
+  ]
 });
 
 
@@ -493,7 +528,10 @@ new Chartist.Bar('#extreme-chart', {
   },
   axisY: {
     offset: 20
-  }
+  },
+  plugins: [
+    Chartist.plugins.tooltip()
+  ]
 }, [
   // Options override for media > 400px
   ['screen and (min-width: 400px)', {
@@ -528,7 +566,10 @@ new Chartist.Bar('#distributed-series', {
   labels: ['XS', 'S', 'M', 'L', 'XL', 'XXL', 'XXXL'],
   series: [20, 60, 120, 200, 180, 20, 10]
 }, {
-  distributeSeries: true
+  distributeSeries: true,
+  plugins: [
+    Chartist.plugins.tooltip()
+  ]
 });
 
 
@@ -549,7 +590,10 @@ new Chartist.Bar('#label-placement-chart', {
   axisY: {
     // On the y-axis start means left and end means right
     position: 'end'
-  }
+  },
+  plugins: [
+    Chartist.plugins.tooltip()
+  ]
 });
 
 
@@ -562,7 +606,10 @@ var chart = new Chartist.Pie('#animating-donut', {
   labels: [1, 2, 3, 4, 5, 6, 7]
 }, {
   donut: true,
-  showLabel: false
+  showLabel: false,
+  plugins: [
+    Chartist.plugins.tooltip()
+  ]
 });
 
 chart.on('draw', function(data) {
@@ -674,7 +721,10 @@ new Chartist.Pie('#gauge-chart', {
   donutWidth: 60,
   startAngle: 270,
   total: 200,
-  showLabel: false
+  showLabel: false,
+  plugins: [
+    Chartist.plugins.tooltip()
+  ]
 });
 
 
@@ -712,7 +762,10 @@ var chart = new Chartist.Line('#different-series', {
     'series-3': {
       showPoint: false
     }
-  }
+  },
+  plugins: [
+    Chartist.plugins.tooltip()
+  ]
 }, [
   // You can even use responsive configuration overrides to
   // customize your series configuration even further!
@@ -754,7 +807,10 @@ var chart = new Chartist.Line('#svg-dot-animation', {
   axisY: {
     showLabel: false,
     offset: 0
-  }
+  },
+  plugins: [
+    Chartist.plugins.tooltip()
+  ]
 });
 
 // Let's put a sequence number aside so we can use it in the event callbacks

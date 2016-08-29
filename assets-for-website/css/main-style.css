@@ -625,7 +625,7 @@ html {
 	font-family:Georgia, serif;
 }
 img {
-	max-width:100%;
+	max-width: 25%;
 	vertical-align:bottom;
 	height:auto;
 }
@@ -2025,7 +2025,7 @@ p {
 	text-align:right;
 }
 .sidebar .menu a:before {
-	content:"ÃƒÂ¢Ã¢â€šÂ¬Ã‚Âº";
+	content:"ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Âº";
 	font-size:16px;
 	padding-right:5px;
 }

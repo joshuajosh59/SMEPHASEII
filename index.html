@@ -1,329 +1,690 @@
-<!doctype html>
-<!--
-  Material Design Lite
-  Copyright 2015 Google Inc. All rights reserved.
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" version="HTML+RDFa 1.0" lang="en" dir="ltr">
+<meta name=viewport content="width=device-width, initial-scale=1">
+<link type="text/css" rel="stylesheet" href="assets-for-website/css/main-style.css" media="all" />
+<link type="text/css" rel="stylesheet" href="assets-for-website/css/style.css" media="all" />
+<link type="text/css" rel="stylesheet" href="assets-for-website/css/custom.css" media="all" />
+<link type="text/css" rel="stylesheet" href="assets-for-website/css/responsive.css" media="all" />
+<script src="assets-for-website/js/js_RLdCYwzbvDqlQo2TU9KQgLHzdcyZ66umH31ME30FMh0.js"></script>
+<script src="assets-for-website/js/js_RLdCYwzbvDqlQo2TU9KQgLHzdcyZ66umH31ME30FMh0.js"></script>
+<script src="assets-for-website/js/js_X3wqWxXtw6R4AIb97o3dAWED9S2GhQf47b9XC3VETVg.js"></script>
+<script src="assets-for-website/js/js_CC-zfeuQHcDhFtVRuKW53h30TL7j_105J32Nz8b8R38.js"></script>
+<script src="assets-for-website/js/js_gQlbxMG_wwGeHhZ0A48UxYM004xIupskuGJjEprYK-g.js"></script>
+<script>jQuery.extend(Drupal.settings, {"mediaelementAll":true,"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"}});</script>
 
-  Licensed under the Apache License, Version 2.0 (the "License");
-  you may not use this file except in compliance with the License.
-  You may obtain a copy of the License at
+  <!-- Favicon and touch icons -->
+       <link rel="apple-touch-icon" sizes="60x60" href="http://www.sme4.me/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="http://www.sme4.me/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="http://www.sme4.me/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="http://www.sme4.me/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="http://www.sme4.me/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" hgiref="http://www.sme4.me/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="http://www.sme4.me/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="http://www.sme4.me/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="http://www.sme4.me/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="http://www.sme4.me/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="http://www.sme4.me/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="http://www.sme4.me/favicon-16x16.png">
+    <link rel="manifest" href="http://www.sme4.me/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="http://www.sme4.me/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+	
+	<!-- New Menu CSS -->
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/core.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/components.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/icons.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/pages.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
+	<!-- New Menu Beginning -->
+	<div id="wrapper">
 
-      https://www.apache.org/licenses/LICENSE-2.0
 
-  Unless required by applicable law or agreed to in writing, software
-  distributed under the License is distributed on an "AS IS" BASIS,
-  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-  See the License for the specific language governing permissions and
-  limitations under the License
--->
+    <body class="fixed-left">
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Introducing Lollipop, a sweet new take on Android.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <title>Tech PortHarcourt</title>
+        <!-- Begin page -->
+        <div id="wrapper">
 
-    <!-- Page styles -->
-    <link rel="stylesheet" href="material.min.css">
-    <link rel="stylesheet" href="icon.css">
-    <link rel="stylesheet" href="css.css">
-    <link rel="stylesheet" href="styles.css">
-    <style>
-    #view-source {
-      position: fixed;
-      display: block;
-      right: 0;
-      bottom: 0;
-      margin-right: 40px;
-      margin-bottom: 40px;
-      z-index: 900;
-    }
-    </style>
-  </head>
-  <body>
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+            <!-- Top Bar Start -->
+            <div class="topbar">
 
-      <div class="android-header mdl-layout__header mdl-layout__header--waterfall">
-        <div class="mdl-layout__header-row">
-          <span class="android-title mdl-layout-title">
-            <img class="android-logo-image" src="images/android-logo.png">
-          </span>
-          <!-- Add spacer, to align navigation to the right in desktop -->
-          <div class="android-header-spacer mdl-layout-spacer"></div>
-          <div class="android-search-box mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width">
-            <label class="mdl-button mdl-js-button mdl-button--icon" for="search-field">
-              <i class="material-icons">search</i>
-            </label>
-            <div class="mdl-textfield__expandable-holder">
-              <input class="mdl-textfield__input" type="text" id="search-field">
+                <!-- LOGO -->
+                <div class="topbar-left">
+                    <div class="text-center">
+                        <a href="index-2.html" class="logo"><i class="icon-magnet icon-c-logo"></i><span><img src="assets/images/logo.png" height="20"/></span></a>
+                        <!-- Image Logo here -->
+                        <!--<a href="index.html" class="logo">-->
+                            <!--<i class="icon-c-logo"> <img src="assets/images/logo_sm.png" height="42"/> </i>-->
+                            <!--<span><img src="assets/images/logo_light.png" height="20"/></span>-->
+                        <!--</a>-->
+                    </div>
+                </div>
+
+                <!-- Button mobile view to collapse sidebar menu -->
+                <div class="navbar navbar-default" role="navigation">
+                    <div class="container">
+                        <div class="">
+                            <div class="pull-left">
+                                <button class="button-menu-mobile open-left waves-effect waves-light">
+                                    <i class="md md-menu"></i>
+                                </button>
+                                <span class="clearfix"></span>
+                            </div>
+
+                            <ul class="nav navbar-nav hidden-xs">
+                                <li><a href="#" class="waves-effect waves-light">Files</a></li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle waves-effect waves-light" data-toggle="dropdown"
+                                       role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span
+                                            class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Action</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                        <li><a href="#">Separated link</a></li>
+                                    </ul>
+                                </li>
+								<li><a href="#" class="waves-effect waves-light">Files</a></li>
+								<li><a href="#" class="waves-effect waves-light">Files</a></li>
+								<li><a href="#" class="waves-effect waves-light">Files</a></li>
+								<li><a href="#" class="waves-effect waves-light">Files</a></li>
+								<li><a href="#" class="waves-effect waves-light">Files</a></li>
+                            </ul>
+							
+                            <form role="search" class="navbar-left app-search pull-left hidden-xs">
+			                     <input type="text" placeholder="Search..." class="form-control">
+			                     <a href="#"><i class="fa fa-search"></i></a>
+			                </form>
+
+
+                            <ul class="nav navbar-nav navbar-right pull-right">
+                                <li class="dropdown top-menu-item-xs">
+                                    <a href="#" data-target="#" class="dropdown-toggle waves-effect waves-light" data-toggle="dropdown" aria-expanded="true">
+                                        <i class="icon-bell"></i> <span class="badge badge-xs badge-danger">3</span>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-lg">
+                                        <li class="notifi-title"><span class="label label-default pull-right">New 3</span>Notification</li>
+                                        <li class="list-group slimscroll-noti notification-list">
+                                           <!-- list item-->
+                                           <a href="javascript:void(0);" class="list-group-item">
+                                              <div class="media">
+                                                 <div class="pull-left p-r-10">
+                                                    <em class="fa fa-diamond noti-primary"></em>
+                                                 </div>
+                                                 <div class="media-body">
+                                                    <h5 class="media-heading">A new order has been placed A new order has been placed</h5>
+                                                    <p class="m-0">
+                                                        <small>There are new settings available</small>
+                                                    </p>
+                                                 </div>
+                                              </div>
+                                           </a>
+
+                                           <!-- list item-->
+                                           <a href="javascript:void(0);" class="list-group-item">
+                                              <div class="media">
+                                                 <div class="pull-left p-r-10">
+                                                    <em class="fa fa-cog noti-warning"></em>
+                                                 </div>
+                                                 <div class="media-body">
+                                                    <h5 class="media-heading">New settings</h5>
+                                                    <p class="m-0">
+                                                        <small>There are new settings available</small>
+                                                    </p>
+                                                 </div>
+                                              </div>
+                                           </a>
+
+                                           <!-- list item-->
+                                           <a href="javascript:void(0);" class="list-group-item">
+                                              <div class="media">
+                                                 <div class="pull-left p-r-10">
+                                                    <em class="fa fa-bell-o noti-custom"></em>
+                                                 </div>
+                                                 <div class="media-body">
+                                                    <h5 class="media-heading">Updates</h5>
+                                                    <p class="m-0">
+                                                        <small>There are <span class="text-primary font-600">2</span> new updates available</small>
+                                                    </p>
+                                                 </div>
+                                              </div>
+                                           </a>
+
+                                           <!-- list item-->
+                                           <a href="javascript:void(0);" class="list-group-item">
+                                              <div class="media">
+                                                 <div class="pull-left p-r-10">
+                                                    <em class="fa fa-user-plus noti-pink"></em>
+                                                 </div>
+                                                 <div class="media-body">
+                                                    <h5 class="media-heading">New user registered</h5>
+                                                    <p class="m-0">
+                                                        <small>You have 10 unread messages</small>
+                                                    </p>
+                                                 </div>
+                                              </div>
+                                           </a>
+
+                                            <!-- list item-->
+                                           <a href="javascript:void(0);" class="list-group-item">
+                                              <div class="media">
+                                                 <div class="pull-left p-r-10">
+                                                    <em class="fa fa-diamond noti-primary"></em>
+                                                 </div>
+                                                 <div class="media-body">
+                                                    <h5 class="media-heading">A new order has been placed A new order has been placed</h5>
+                                                    <p class="m-0">
+                                                        <small>There are new settings available</small>
+                                                    </p>
+                                                 </div>
+                                              </div>
+                                           </a>
+
+                                           <!-- list item-->
+                                           <a href="javascript:void(0);" class="list-group-item">
+                                              <div class="media">
+                                                 <div class="pull-left p-r-10">
+                                                    <em class="fa fa-cog noti-warning"></em>
+                                                 </div>
+                                                 <div class="media-body">
+                                                    <h5 class="media-heading">New settings</h5>
+                                                    <p class="m-0">
+                                                        <small>There are new settings available</small>
+                                                    </p>
+                                                 </div>
+                                              </div>
+                                           </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);" class="list-group-item text-right">
+                                                <small class="font-600">See all notifications</small>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="hidden-xs">
+                                    <a href="#" id="btn-fullscreen" class="waves-effect waves-light"><i class="icon-size-fullscreen"></i></a>
+                                </li>
+                                <li class="hidden-xs">
+                                    <a href="#" class="right-bar-toggle waves-effect waves-light"><i class="icon-settings"></i></a>
+                                </li>
+                                <li class="dropdown top-menu-item-xs">
+                                    <a href="#" class="dropdown-toggle profile waves-effect waves-light" data-toggle="dropdown" aria-expanded="true"><img src="assets/images/users/avatar-1.jpg" alt="user-img" class="img-circle"> </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="javascript:void(0)"><i class="ti-user m-r-10 text-custom"></i> Profile</a></li>
+                                        <li><a href="javascript:void(0)"><i class="ti-settings m-r-10 text-custom"></i> Settings</a></li>
+                                        <li><a href="javascript:void(0)"><i class="ti-lock m-r-10 text-custom"></i> Lock screen</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="javascript:void(0)"><i class="ti-power-off m-r-10 text-danger"></i> Logout</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--/.nav-collapse -->
+                    </div>
+                </div>
             </div>
+            <!-- Top Bar End -->
+
+
+            <!-- ========== Left Sidebar Start ========== -->
+
+            <div class="left side-menu">
+                <div class="sidebar-inner slimscrollleft">
+                    <!--- Divider -->
+                    <div id="sidebar-menu">
+                        <ul>
+
+                        	<li class="text-muted menu-title">Navigation</li>
+
+                            <li class="has_sub">
+                                <a href="javascript:void(0);" class="waves-effect"><i class="ti-home"></i> <span> Dashboard </span> <span class="menu-arrow"></span></a>
+                                <ul class="list-unstyled">
+                                    <li><a href="index-2.html">Dashboard 1</a></li>
+                                    <li><a href="dashboard_2.html">Dashboard 2</a></li>
+                                    <li><a href="dashboard_3.html">Dashboard 3</a></li>
+                                    <li><a href="dashboard_4.html">Dashboard 4</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="has_sub">
+                                <a href="javascript:void(0);" class="waves-effect"><i class="ti-paint-bucket"></i> <span> UI Kit </span> <span class="menu-arrow"></span> </a>
+                                <ul class="list-unstyled">
+                                    <li><a href="ui-buttons.html">Buttons</a></li>
+                                    <li><a href="ui-loading-buttons.html">Loading Buttons</a></li>
+                                    <li><a href="ui-panels.html">Panels</a></li>
+                                    <li><a href="ui-portlets.html">Portlets</a></li>
+                                    <li><a href="ui-checkbox-radio.html">Checkboxs-Radios</a></li>
+                                    <li><a href="ui-tabs.html">Tabs</a></li>
+                                    <li><a href="ui-modals.html">Modals</a></li>
+                                    <li><a href="ui-progressbars.html">Progress Bars</a></li>
+                                    <li><a href="ui-notification.html">Notification</a></li>
+                                    <li><a href="ui-images.html">Images</a></li>
+                                    <li><a href="ui-carousel.html">Carousel</a>
+                                    <li><a href="ui-video.html">Video</a>
+                                    <li><a href="ui-bootstrap.html">Bootstrap UI</a></li>
+                                    <li><a href="ui-typography.html">Typography</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="has_sub">
+                                <a href="javascript:void(0);" class="waves-effect"><i class="ti-light-bulb"></i><span class="label label-primary pull-right">9</span><span> Components </span> </a>
+                                <ul class="list-unstyled">
+                                    <li><a href="components-grid.html">Grid</a></li>
+                                    <li><a href="components-widgets.html">Widgets</a></li>
+                                    <li><a href="components-nestable-list.html">Nesteble</a></li>
+                                    <li><a href="components-range-sliders.html">Range sliders</a></li>
+                                    <li><a href="components-masonry.html">Masonry</a></li>
+                                    <li><a href="components-animation.html">Animation</a></li>
+                                    <li><a href="components-sweet-alert.html">Sweet Alerts</a></li>
+                                    <li><a href="components-treeview.html">Treeview</a></li>
+                                    <li><a href="components-tour.html">Tour</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="has_sub">
+                                <a href="javascript:void(0);" class="waves-effect"><i class="ti-spray"></i> <span> Icons </span> <span class="menu-arrow"></span> </a>
+                                <ul class="list-unstyled">
+                                	<li><a href="icons-glyphicons.html">Glyphicons</a></li>
+                                    <li><a href="icons-materialdesign.html">Material Design</a></li>
+                                    <li><a href="icons-ionicons.html">Ion Icons</a></li>
+                                    <li><a href="icons-fontawesome.html">Font awesome</a></li>
+                                    <li><a href="icons-themifyicon.html">Themify Icons</a></li>
+                                    <li><a href="icons-simple-line.html">Simple line Icons</a></li>
+                                    <li><a href="icons-weather.html">Weather Icons</a></li>
+                                    <li><a href="icons-typicons.html">Typicons</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="has_sub">
+                                <a href="javascript:void(0);" class="waves-effect"><i class="ti-pencil-alt"></i><span> Forms </span> <span class="menu-arrow"></span></a>
+                                <ul class="list-unstyled">
+                                    <li><a href="form-elements.html">General Elements</a></li>
+                                    <li><a href="form-advanced.html">Advanced Form</a></li>
+                                    <li><a href="form-validation.html">Form Validation</a></li>
+                                    <li><a href="form-pickers.html">Form Pickers</a></li>
+                                    <li><a href="form-wizard.html">Form Wizard</a></li>
+                                    <li><a href="form-mask.html">Form Masks</a></li>
+                                    <li><a href="form-summernote.html">Summernote</a></li>
+                                    <li><a href="form-wysiwig.html">Wysiwig Editors</a></li>
+                                    <li><a href="form-code-editor.html">Code Editor</a></li>
+                                    <li><a href="form-uploads.html">Multiple File Upload</a></li>
+                                    <li><a href="form-xeditable.html">X-editable</a></li>
+                                    <li><a href="form-image-crop.html">Image Crop</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="has_sub">
+                                <a href="javascript:void(0);" class="waves-effect"><i class="ti-menu-alt"></i><span>Tables </span> <span class="menu-arrow"></span></a>
+                                <ul class="list-unstyled">
+                                    <li><a href="tables-basic.html">Basic Tables</a></li>
+                                    <li><a href="tables-datatable.html">Data Table</a></li>
+                                    <li><a href="tables-editable.html">Editable Table</a></li>
+                                    <li><a href="tables-responsive.html">Responsive Table</a></li>
+                                    <li><a href="tables-foo-tables.html">FooTable</a></li>
+                                    <li><a href="tables-bootstrap.html">Bootstrap Tables</a></li>
+                                    <li><a href="tables-tablesaw.html">Tablesaw Tables</a></li>
+                                    <li><a href="tables-jsgrid.html">JsGrid Tables</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="has_sub">
+                                <a href="javascript:void(0);" class="waves-effect"><i class="ti-bar-chart"></i><span class="label label-pink pull-right">11</span><span> Charts </span></a>
+                                <ul class="list-unstyled">
+                                	<li><a href="chart-flot.html">Flot Chart</a></li>
+                                    <li><a href="chart-morris.html">Morris Chart</a></li>
+                                    <li><a href="chart-chartjs.html">Chartjs</a></li>
+                                    <li><a href="chart-peity.html">Peity Charts</a></li>
+                                    <li><a href="chart-chartist.html">Chartist Charts</a></li>
+                                    <li><a href="chart-c3.html">C3 Charts</a></li>
+                                    <li><a href="chart-nvd3.html"> Nvd3 Charts</a></li>
+                                    <li><a href="chart-sparkline.html">Sparkline charts</a></li>
+                                    <li><a href="chart-radial.html">Radial charts</a></li>
+                                    <li><a href="chart-other.html">Other Chart</a></li>
+                                    <li><a href="chart-ricksaw.html">Ricksaw Chart</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="has_sub">
+                                <a href="javascript:void(0);" class="waves-effect"><i class="ti-location-pin"></i><span> Maps </span> <span class="menu-arrow"></span></a>
+                                <ul class="list-unstyled">
+                                    <li><a href="map-google.html"> Google Map</a></li>
+                                    <li><a href="map-vector.html"> Vector Map</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="text-muted menu-title">More</li>
+
+                            <li class="has_sub">
+                                <a href="javascript:void(0);" class="waves-effect"><i class="ti-files"></i><span> Pages </span> <span class="menu-arrow"></span></a>
+                                <ul class="list-unstyled">
+                                	<li><a href="page-starter.html">Starter Page</a></li>
+                                    <li><a href="page-login.html">Login</a></li>
+                                    <li><a href="page-login-v2.html">Login v2</a></li>
+                                    <li><a href="page-register.html">Register</a></li>
+                                    <li><a href="page-register-v2.html">Register v2</a></li>
+                                    <li><a href="page-signup-signin.html">Signin - Signup</a></li>
+                                    <li><a href="page-recoverpw.html">Recover Password</a></li>
+                                    <li><a href="page-lock-screen.html">Lock Screen</a></li>
+                                    <li><a href="page-400.html">Error 400</a></li>
+                                    <li><a href="page-403.html">Error 403</a></li>
+                                    <li><a href="page-404.html">Error 404</a></li>
+                                    <li><a href="page-404_alt.html">Error 404-alt</a></li>
+                                    <li><a href="page-500.html">Error 500</a></li>
+                                    <li><a href="page-503.html">Error 503</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="has_sub">
+                                <a href="javascript:void(0);" class="waves-effect"><i class="ti-gift"></i><span> Extras </span> <span class="menu-arrow"></span></a>
+                                <ul class="list-unstyled">
+                                    <li><a href="extra-profile.html">Profile</a></li>
+                                    <li><a href="extra-timeline.html">Timeline</a></li>
+                                    <li><a href="extra-sitemap.html">Site map</a></li>
+                                    <li><a href="extra-invoice.html">Invoice</a></li>
+                                    <li><a href="extra-email-template.html">Email template</a></li>
+                                    <li><a href="extra-maintenance.html">Maintenance</a></li>
+                                    <li><a href="extra-coming-soon.html">Coming-soon</a></li>
+                                    <li><a href="extra-faq.html">FAQ</a></li>
+                                    <li><a href="extra-search-result.html">Search result</a></li>
+                                    <li><a href="extra-gallery.html">Gallery</a></li>
+                                    <li><a href="extra-pricing.html">Pricing</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="has_sub">
+                                <a href="javascript:void(0);" class="waves-effect"><i class="ti-crown"></i><span class="label label-success pull-right">3</span><span> Apps </span></a>
+                                <ul class="list-unstyled">
+                                    <li><a href="apps-calendar.html"> Calendar</a></li>
+                                    <li><a href="apps-contact.html"> Contact</a></li>
+                                    <li><a href="apps-taskboard.html"> Taskboard</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="has_sub">
+                                <a href="javascript:void(0);" class="waves-effect"><i class="ti-email"></i><span> Email </span> <span class="menu-arrow"></span></a>
+                                <ul class="list-unstyled">
+                                    <li><a href="email-inbox.html"> Inbox</a></li>
+                                    <li><a href="email-read.html"> Read Mail</a></li>
+                                    <li><a href="email-compose.html"> Compose Mail</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="has_sub">
+                                <a href="javascript:void(0);" class="waves-effect"><i class="ti-widget"></i><span> Layouts </span> <span class="menu-arrow"></span></a>
+                                <ul class="list-unstyled">
+                                    <li><a href="layout-leftbar_2.html"> Leftbar with User</a></li>
+                                    <li><a href="layout-menu-collapsed.html"> Menu Collapsed</a></li>
+                                    <li><a href="layout-menu-small.html"> Small Menu</a></li>
+                                    <li><a href="layout-header_2.html"> Header style</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="has_sub">
+                                <a href="javascript:void(0);" class="waves-effect"><i class="ti-share"></i><span>Multi Level </span> <span class="menu-arrow"></span></a>
+                                <ul>
+                                    <li class="has_sub">
+                                        <a href="javascript:void(0);" class="waves-effect"><span>Menu Level 1.1</span>  <span class="menu-arrow"></span></a>
+                                        <ul style="">
+                                            <li><a href="javascript:void(0);"><span>Menu Level 2.1</span></a></li>
+                                            <li><a href="javascript:void(0);"><span>Menu Level 2.2</span></a></li>
+                                            <li><a href="javascript:void(0);"><span>Menu Level 2.3</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);"><span>Menu Level 1.2</span></a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="text-muted menu-title">Extra</li>
+
+                            <li class="has_sub">
+                                <a href="javascript:void(0);" class="waves-effect"><i class="ti-user"></i><span> Crm </span> <span class="menu-arrow"></span></a>
+                                <ul class="list-unstyled">
+                                    <li><a href="crm-dashboard.html"> Dashboard </a></li>
+                                    <li><a href="crm-contact.html"> Contacts </a></li>
+                                    <li><a href="crm-opportunities.html"> Opportunities </a></li>
+                                    <li><a href="crm-leads.html"> Leads </a></li>
+                                    <li><a href="crm-customers.html"> Customers </a></li>
+                                </ul>
+                            </li>
+
+                            <li class="has_sub">
+                                <a href="javascript:void(0);" class="waves-effect"><i class="ti-shopping-cart"></i><span class="label label-warning pull-right">6</span><span> eCommerce </span></a>
+                                <ul class="list-unstyled">
+                                    <li><a href="ecommerce-dashboard.html"> Dashboard</a></li>
+                                    <li><a href="ecommerce-products.html"> Products</a></li>
+                                    <li><a href="ecommerce-product-detail.html"> Product Detail</a></li>
+                                    <li><a href="ecommerce-product-edit.html"> Product Edit</a></li>
+                                    <li><a href="ecommerce-orders.html"> Orders</a></li>
+                                    <li><a href="ecommerce-sellers.html"> Sellers</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div> </div>
+		
+            <!-- Left Sidebar End -->
+
+
+
+	
+	
+</head>
+
+<br><br><br>
+	  
+<body class="html front not-logged-in no-sidebars page-all" >
+<div id="main"> <a id="main-content"></a>
+  <div class="region region-content">
+    <div id="block-system-main" class="block block-system first last odd">
+      <div id="isotope-container" data-fixed-filter="false">
+       <!-- /.block -->
+	    <div class="block  careers linksection filter-careers aggregator" data-mobile-weight="8"><a class="inner" href="grants.html" >
+          <div class="plus">
+		  <div class="cross"></div>
+            <h2 class="title"><span>PROFILE</span></h2>
+			<h1><span class="subtitle">MY PROFILE<br/>
+              LOG OUT</span></h1>
+             </div>
+          <!-- /plus -->
+          </a> <!-- /.inner --></div>
+	   
+        <!-- /.block -->
+        <div class="block  work filter-case_study aggregator" data-mobile-weight="2"><a class="inner">
+          <div class="plus">
+		   <div class="cross"></div>
+           <a href="grants.html"> <h2 class="title"><span>PHD</span></h2></a>
           </div>
-          <!-- Navigation -->
-          <div class="android-navigation-container">
-            <nav class="android-navigation mdl-navigation">
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Home</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">About</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Community</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Events </a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Blog</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Contact</a>
-              
-            </nav>
+          <!-- /plus -->
+          <div class="count"> <span>16</span> </div>
+          <!-- /count --></a> <!-- /.inner --></div>
+       <!-- /.block -->
+        <div class="block  work filter-case_study aggregator" data-mobile-weight="2"><a class="inner">
+          <div class="plus">
+		   <div class="cross"></div>
+           <a href="awards.html"> <h2 class="title"><span>FELLOWSHIP</span></h2></a>
           </div>
-          <span class="android-mobile-title mdl-layout-title">
-            <img class="android-logo-image" src="images/android-logo.png">
-          </span>
-          <button class="android-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" id="more-button">
-            <i class="material-icons">more_vert</i>
-          </button>
-          <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="more-button">
-            <li class="mdl-menu__item">Developers</li>
-            <li class="mdl-menu__item">Technoprenuers</li>
-            <li disabled class="mdl-menu__item">Startups</li>
-            <li class="mdl-menu__item"> You!</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="android-drawer mdl-layout__drawer">
-        <span class="mdl-layout-title">
-          <img class="android-logo-image" src="images/android-logo-white.png">
-        </span>
-        <nav class="mdl-navigation">
-          <a class="mdl-navigation__link" href="">Home</a>
-          <a class="mdl-navigation__link" href="">About</a>
-          <a class="mdl-navigation__link" href="">Community</a>
-          <a class="mdl-navigation__link" href="">Events</a>
-          <a class="mdl-navigation__link" href="">blog</a>
-          <a class="mdl-navigation__link" href="">Contact</a>
-           
-          <div class="android-drawer-separator"></div>
-          <span class="mdl-navigation__link" href="">Developers</span>
-          <a class="mdl-navigation__link" href="">Communities</a>
-          <a class="mdl-navigation__link" href="">Startups</a>
-          <a class="mdl-navigation__link" href="">Offers</a>
-          <a class="mdl-navigation__link" href="">Android history</a>
-          <div class="android-drawer-separator"></div>
-          <span class="mdl-navigation__link" href="">Resources</span>
-          <a class="mdl-navigation__link" href="">Official blog</a>
-          <a class="mdl-navigation__link" href="">Android on Google+</a>
-          <a class="mdl-navigation__link" href="">Android on Twitter</a>
-          <div class="android-drawer-separator"></div>
-          <span class="mdl-navigation__link" href="">For developers</span>
-          <a class="mdl-navigation__link" href="">App developer resources</a>
-          <a class="mdl-navigation__link" href="">Android Open Source Project</a>
-          <a class="mdl-navigation__link" href="">Android SDK</a>
-        </nav>
-      </div>
-
-      <div class="android-content mdl-layout__content">
-        <a name="top"></a>
-        <div class="android-be-together-section mdl-typography--text-center">
-          <div class="logo-font android-slogan">be together. not the same.</div>
-          <div class="logo-font android-sub-slogan">welcome to android... be yourself. do your thing. see what's going on.</div>
-          <div class="logo-font android-create-character">
-            <a href=""><img src="images/andy.png"> create your android character</a>
+          <!-- /plus -->
+          <div class="count"> <span>389</span> </div>
+          <!-- /count --></a> <!-- /.inner --></div>
+        <!-- /.block -->
+        <div class="block  blog filter-article aggregator" data-mobile-weight="7"><a class="inner" href="grants.html" >
+          <div class="plus">
+		  <div class="cross"></div>
+            <h2 class="title"><span>MASTERS</span></h2>
           </div>
-
-          <a href="#screens">
-            <button class="android-fab mdl-button mdl-button--colored mdl-js-button mdl-button--fab mdl-js-ripple-effect">
-              <i class="material-icons">expand_more</i>
-            </button>
-          </a>
-        </div>
-        <div class="android-screen-section mdl-typography--text-center">
-          <a name="screens"></a>
-          <div class="mdl-typography--display-1-color-contrast">Powering screens of all sizes</div>
-          <div class="android-screens">
-            <div class="android-wear android-screen">
-              <a class="android-image-link" href="">
-                <img class="android-screen-image" src="images/wear-silver-on.png">
-                <img class="android-screen-image" src="images/wear-black-on.png">
-              </a>
-              <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase" href="">Android Wear</a>
-            </div>
-            <div class="android-phone android-screen">
-              <a class="android-image-link" href="">
-                <img class="android-screen-image" src="images/nexus6-on.jpg">
-              </a>
-              <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase" href="">Phones</a>
-            </div>
-            <div class="android-tablet android-screen">
-              <a class="android-image-link" href="">
-                <img class="android-screen-image" src="images/nexus9-on.jpg">
-              </a>
-              <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase" href="">Tablets</a>
-            </div>
-            <div class="android-tv android-screen">
-              <a class="android-image-link" href="">
-                <img class="android-screen-image" src="images/tv-on.jpg">
-              </a>
-              <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase" href="">Android TV</a>
-            </div>
-            <div class="android-auto android-screen">
-              <a class="android-image-link" href="">
-                <img class="android-screen-image" src="images/auto-on.jpg">
-              </a>
-              <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase mdl-typography--text-left" href="">Coming Soon: Android Auto</a>
-            </div>
+          <!-- /plus -->
+          <div class="count"> <span>412</span> </div>
+          <!-- /count --></a> <!-- /.inner --></div>
+        
+		          
+        <!-- /.block -->
+        <div class="block  services linksection filter-services aggregator" data-mobile-weight="1"><a class="inner" href="grants.html" >
+          <div class="plus">
+		   <div class="cross"></div>
+            <h2 class="title"><span>INTERNSHIP</span></h2>
           </div>
-        </div>
-        <div class="android-wear-section">
-          <div class="android-wear-band">
-            <div class="android-wear-band-text">
-              <div class="mdl-typography--display-2 mdl-typography--font-thin">The best of Google built in</div>
-              <p class="mdl-typography--headline mdl-typography--font-thin">
-                Android works perfectly with your favourite apps like Google Maps,
-                Calendar and YouTube.
-              </p>
-              <p>
-                <a class="mdl-typography--font-regular mdl-typography--text-uppercase android-alt-link" href="">
-                  See what's new in the Play Store&nbsp;<i class="material-icons">chevron_right</i>
-                </a>
-              </p>
-            </div>
+          <!-- /plus -->
+          <div class="count"> <span>161</span> </div>
+          </a> <!-- /.inner --></div>
+        <!-- /.block -->
+      <!-- /.block -->
+        <div class="block  work filter-case_study aggregator" data-mobile-weight="2"><a class="inner">
+          <div class="plus">
+		   <div class="cross"></div>
+           <a href="awards.html"> <h2 class="title"><span>BACHELORS</span></h2></a>
           </div>
-        </div>
-        <div class="android-customized-section">
-          <div class="android-customized-section-text">
-            <div class="mdl-typography--font-light mdl-typography--display-1-color-contrast">Customised by you, for you</div>
-            <p class="mdl-typography--font-light">
-              Put the stuff that you care about right on your home screen: the latest news, the weather or a stream of your recent photos.
-              <br>
-              <a href="" class="android-link mdl-typography--font-light">Customise your phone</a>
-            </p>
+          <!-- /plus -->
+          <div class="count"> <span>302</span> </div>
+          <!-- /count --></a> <!-- /.inner --></div>
+		  <!-- /.block -->
+        <div class="block  work filter-case_study aggregator" data-mobile-weight="2"><a class="inner">
+          <div class="plus">
+		   <div class="cross"></div>
+           <a href="awards.html"> <h2 class="title"><span>START-UPS</span></h2></a>
           </div>
-          <div class="android-customized-section-image"></div>
-        </div>
-        <div class="android-more-section">
-          <div class="android-section-title mdl-typography--display-1-color-contrast">More from Android</div>
-          <div class="android-card-container mdl-grid">
-            <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
-              <div class="mdl-card__media">
-                <img src="images/more-from-1.png">
-              </div>
-              <div class="mdl-card__title">
-                 <h4 class="mdl-card__title-text">Get going on Android</h4>
-              </div>
-              <div class="mdl-card__supporting-text">
-                <span class="mdl-typography--font-light mdl-typography--subhead">Four tips to make your switch to Android quick and easy</span>
-              </div>
-              <div class="mdl-card__actions">
-                 <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
-                   Make the switch
-                   <i class="material-icons">chevron_right</i>
-                 </a>
-              </div>
-            </div>
-
-            <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
-              <div class="mdl-card__media">
-                <img src="images/more-from-4.png">
-              </div>
-              <div class="mdl-card__title">
-                 <h4 class="mdl-card__title-text">Create your own Android character</h4>
-              </div>
-              <div class="mdl-card__supporting-text">
-                <span class="mdl-typography--font-light mdl-typography--subhead">Turn the little green Android mascot into you, your friends, anyone!</span>
-              </div>
-              <div class="mdl-card__actions">
-                 <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
-                   androidify.com
-                   <i class="material-icons">chevron_right</i>
-                 </a>
-              </div>
-            </div>
-
-            <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
-              <div class="mdl-card__media">
-                <img src="images/more-from-2.png">
-              </div>
-              <div class="mdl-card__title">
-                 <h4 class="mdl-card__title-text">Get a clean customisable home screen</h4>
-              </div>
-              <div class="mdl-card__supporting-text">
-                <span class="mdl-typography--font-light mdl-typography--subhead">A clean, simple, customisable home screen that comes with the power of Google Now: Traffic alerts, weather and much more, just a swipe away.</span>
-              </div>
-              <div class="mdl-card__actions">
-                 <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
-                   Download now
-                   <i class="material-icons">chevron_right</i>
-                 </a>
-              </div>
-            </div>
-
-            <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
-              <div class="mdl-card__media">
-                <img src="images/more-from-3.png">
-              </div>
-              <div class="mdl-card__title">
-                 <h4 class="mdl-card__title-text">Millions to choose from</h4>
-              </div>
-              <div class="mdl-card__supporting-text">
-                <span class="mdl-typography--font-light mdl-typography--subhead">Hail a taxi, find a recipe, run through a temple – Google Play has all the apps and games that let you make your Android device uniquely yours.</span>
-              </div>
-              <div class="mdl-card__actions">
-                 <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
-                   Find apps
-                   <i class="material-icons">chevron_right</i>
-                 </a>
-              </div>
-            </div>
+          <!-- /plus -->
+          <div class="count"> <span>132</span> </div>
+          <!-- /count --></a> <!-- /.inner --></div>
+        <!-- /.block -->
+        <div class="block  blonde-title aggregator" data-mobile-weight="3">
+          <div class="inner">
+            <h1><span class="subtitle">SMART MONEY ENCYCLOPEDIA<br/>
+              Funding your Future</span></h1>
           </div>
-        </div>
-
-        <footer class="android-footer mdl-mega-footer">
-          <div class="mdl-mega-footer--top-section">
-            <div class="mdl-mega-footer--left-section">
-              <button class="mdl-mega-footer--social-btn"></button>
-              &nbsp;
-              <button class="mdl-mega-footer--social-btn"></button>
-              &nbsp;
-              <button class="mdl-mega-footer--social-btn"></button>
-            </div>
-            <div class="mdl-mega-footer--right-section">
-              <a class="mdl-typography--font-light" href="#top">
-                Back to Top
-                <i class="material-icons">expand_less</i>
-              </a>
-            </div>
+          <!-- /.inner --></div>
+        
+        <!-- /.block -->
+        <div class="block  people linksection filter-people aggregator" data-mobile-weight="7"><a class="inner" href="grants.html" >
+          <div class="plus">
+		   <div class="cross"></div>
+            <h2 class="title"><span>CONTACT</span></h2>
           </div>
-
-          <div class="mdl-mega-footer--middle-section">
-            <p class="mdl-typography--font-light">Satellite imagery: © 2014 Astrium, DigitalGlobe</p>
-            <p class="mdl-typography--font-light">Some features and devices may not be available in all areas</p>
+          
+          </a> <!-- /.inner --></div>
+        <!-- /.block -->
+        
+        
+        <!-- /.block -->
+       
+        
+        <!-- /.block -->
+        <div class="block  contact linksection filter-contact aggregator" data-mobile-weight="1"><a class="inner" href="grants.html" >
+          <div class="plus">
+		    <div class="cross"></div>
+            <h2 class="title"><span>ABOUT US</span></h2>
           </div>
-
-          <div class="mdl-mega-footer--bottom-section">
-            <a class="android-link android-link-menu mdl-typography--font-light" id="version-dropdown">
-              Versions
-              <i class="material-icons">arrow_drop_up</i>
-            </a>
-            <ul class="mdl-menu mdl-js-menu mdl-menu--top-left mdl-js-ripple-effect" for="version-dropdown">
-              <li class="mdl-menu__item">5.0 Lollipop</li>
-              <li class="mdl-menu__item">4.4 KitKat</li>
-              <li class="mdl-menu__item">4.3 Jelly Bean</li>
-              <li class="mdl-menu__item">Android History</li>
-            </ul>
-            <a class="android-link android-link-menu mdl-typography--font-light" id="developers-dropdown">
-              For Developers
-              <i class="material-icons">arrow_drop_up</i>
-            </a>
-            <ul class="mdl-menu mdl-js-menu mdl-menu--top-left mdl-js-ripple-effect" for="developers-dropdown">
-              <li class="mdl-menu__item">App developer resources</li>
-              <li class="mdl-menu__item">Android Open Source Project</li>
-              <li class="mdl-menu__item">Android SDK</li>
-              <li class="mdl-menu__item">Android for Work</li>
-            </ul>
-            <a class="android-link mdl-typography--font-light" href="">Blog</a>
-            <a class="android-link mdl-typography--font-light" href="">Privacy Policy</a>
+          <!-- /plus -->
+          </a> <!-- /.inner --></div>
+        
+		
+        <!-- /.block -->
+         <div class="block  about linksection filter-about aggregator" data-mobile-weight="6"><a class="inner" href="grants.html" >
+          <div class="plus">
+		    <div class="cross"></div>
+            <h2 class="title"><span>ESSAY</span></h2>
           </div>
-
-        </footer>
+          <!-- /plus -->
+		  <!-- /plus -->
+          <div class="count"> <span>136</span> </div>
+          </a> <!-- /.inner --></div>
+		  
+        <!-- /.block -->
+        <div class="block  blog filter-article aggregator" data-mobile-weight="5"><a class="inner" href="grants.html" >
+          <div class="plus">
+		  <div class="cross"></div>
+            <h2 class="title"><span> N.G.O </span></h2>
+          </div>
+          <!-- /plus -->
+          <div class="count"> <span>412</span> </div>
+          <!-- /count --></a> <!-- /.inner --></div>
+        <!-- /.block -->
+		<!-- /.block -->
+         <div class="block  about linksection filter-about aggregator" data-mobile-weight="6"><a class="inner" href="grants.html" >
+          <div class="plus">
+		    <div class="cross"></div>
+            <h2 class="title"><span>POST DOCTORATE</span></h2>
+          </div>
+          <!-- /plus -->
+		  <!-- /plus -->
+          <div class="count"> <span>136</span> </div>
+          </a> <!-- /.inner --></div>
+		  <!-- /.block -->
+         <div class="block  about linksection filter-about aggregator" data-mobile-weight="6"><a class="inner" href="grants.html" >
+          <div class="plus">
+		    <div class="cross"></div>
+            <h2 class="title"><span>LOAN</span></h2>
+          </div>
+          <!-- /plus -->
+		  <!-- /plus -->
+          <div class="count"> <span>136</span> </div>
+          </a> <!-- /.inner --></div>
+		  <!-- /.block -->
+         <div class="block  about linksection filter-about aggregator" data-mobile-weight="10"><a class="inner" href="grants.html" >
+          <div class="plus">
+		    <div class="cross"></div>
+            <h2 class="title"><span>PHILANTHROPY</span></h2>
+          </div>
+          <!-- /plus -->
+		  <!-- /plus -->
+          <div class="count"> <span>136</span> </div>
+          </a> <!-- /.inner --></div>
+      <!-- /.container -->
+	   <div>
+      <h2 class="element-invisible">Pages</h2>
+      <div class="item-list">
+        <ul class="pager">
+          <li class="pager-current first">1</li>
+          <li class="pager-item"><a title="Go to page 2" href="/all?page=1">2</a></li>
+          <li class="pager-item"><a title="Go to page 3" href="/all?page=2">3</a></li>
+          <li class="pager-item"><a title="Go to page 4" href="/all?page=3">4</a></li>
+          <li class="pager-item"><a title="Go to page 5" href="/all?page=4">5</a></li>
+          <li class="pager-item"><a title="Go to page 6" href="/all?page=5">6</a></li>
+          <li class="pager-next"><a title="Go to next page" href="/all?page=1">next ›</a></li>
+          <li class="pager-last last"><a title="Go to last page" href="/all?page=5">last »</a></li>
+        </ul>
       </div>
     </div>
-    <a href="https://github.com/google/material-design-lite/blob/mdl-1.x/templates/android-dot-com/" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">Send us a Message</a>
-    <script src="material.min.js"></script>
-  </body>
+    <!-- /.block --> 
+  </div>
+</div>
+<!-- /#content -->
+</div>
+
+<!-- /#main -->
+
+<footer id="footer" class="region region-footer">
+  <div id="block-block-6" class="block block-block first last odd"> </div>
+
+</footer>
+<!-- region__footer -->
+
+</div>
+<!-- /#page --> 
+
+<a href="/" class="home-page-button active">Home</a> 
+<!-- admin tabs -->
+
+</body>
+<script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/detect.js"></script>
+        <script src="assets/js/fastclick.js"></script>
+        <script src="assets/js/jquery.slimscroll.js"></script>
+        <script src="assets/js/jquery.blockUI.js"></script>
+        <script src="assets/js/waves.js"></script>
+        <script src="assets/js/wow.min.js"></script>
+        <script src="assets/js/jquery.nicescroll.js"></script>
+        <script src="assets/js/jquery.scrollTo.min.js"></script>
+
+
+        <script src="assets/js/jquery.core.js"></script>
+        <script src="assets/js/jquery.app.js"></script>
 </html>
